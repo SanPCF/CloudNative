@@ -1,11 +1,10 @@
-language: java
 dist: trusty
 sudo: true
 notifications:
   email: false
 env:
   - RELEASE_TAG="release-$TRAVIS_BUILD_NUMBER"
-  - WELCOME_MESSAGE = " Test Message set in travil yml"
+ 
 if: tag IS blank
 
 
@@ -16,7 +15,7 @@ jobs:
       jdk: openjdk8
       install: skip
       before_install: 
-        - chmod +x mvnw
+        - chmod a+x ./mvnw
       script: ./mvnw clean install
       before_deploy:
         - git config --local user.name "Travis CI"
