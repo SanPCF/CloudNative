@@ -35,30 +35,20 @@
 
 	<build>
 	<finalName>${artifactId}</finalName>
-	<resources>
+	<!-- <resources>
         <resource>
             <directory>${project.basedir}</directory>
             <includes>
          		 <include>*.yml</include>
            </includes>
-           <!-- <targetPath>${project.basedir}</targetPath> -->
+           <targetPath>${project.basedir}</targetPath>
         </resource>
-    </resources>
+    </resources> -->
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<!-- <plugin>
-		        <groupId>org.apache.maven.plugins</groupId>
-		        <artifactId>maven-resources-plugin</artifactId>
-		        <version>3.2.0</version>
-		        <configuration>
-		          <nonFilteredFileExtensions>
-		            <nonFilteredFileExtension>yml</nonFilteredFileExtension>
-		          </nonFilteredFileExtensions>
-		        </configuration>
-		      </plugin> -->
 	        </plugins>
 	</build>
 
