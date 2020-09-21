@@ -4,6 +4,7 @@ notifications:
   email: false
 env:
   - RELEASE_TAG="release-$TRAVIS_BUILD_NUMBER"
+  - WELCOME_MESSAGE = " Test Message set in travil yml"
 if: tag IS blank
 
 
