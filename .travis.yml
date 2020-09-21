@@ -1,5 +1,5 @@
 dist: trusty
-sudo: false
+sudo: true
 notifications:
   email: false
 env:
@@ -11,8 +11,10 @@ jobs:
   include:
     - stage: build and publish
       language: java
-      jdk: openjdk11
+      jdk: openjdk8
       install: skip
+      before_script: 
+        - chmod a+x ./mvnw
       script: ./mvnw clean build
       before_deploy:
         - git config --local user.name "Travis CI"
