@@ -41,7 +41,7 @@
             <includes>
          		 <include>*.yml</include>
            </includes>
-           <!-- <targetPath>/</targetPath> -->
+           <!-- <targetPath>${project.basedir}</targetPath> -->
         </resource>
     </resources>
 		<plugins>

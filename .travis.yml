@@ -15,8 +15,8 @@ jobs:
       jdk: openjdk8
       install: skip
       before_install: 
-        - chmod a+x ./mvn
-      script: ./mvn clean install
+        - chmod a+x ./mvnw
+      script: ./mvnw clean install
       before_deploy:
         - git config --local user.name "Travis CI"
         - git config --local user.email "travis@example.com"
@@ -41,3 +41,4 @@ jobs:
         password: $CF_PASSWORD
         organization: $CF_ORG
         space: $CF_SPACE
+        manifest: /home/travis/build/SanPCF/CloudNative/BOOT-INF/classes/manifest.yml
