@@ -24,7 +24,7 @@ jobs:
       deploy:
         provider: releases
         api_key: $GITHUB_OAUTH_TOKEN
-        file: "build/libs/HelloWorld.jar"
+        file: "build/$GITHUB_USERNAME/CloudNative/target/HelloWorld.jar"
         skip_cleanup: true
     - stage: deploy to cf
       language: bash

@@ -33,7 +33,7 @@
 	</dependencies>
 
 	<build>
-	<finalName>${artifactId}</finalName>
+	<finalName>HelloWorld</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
