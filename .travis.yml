@@ -1,4 +1,5 @@
 dist: trusty
+language: java
 sudo: true
 notifications:
   email: false
