@@ -16,7 +16,7 @@ jobs:
       install: skip
       before_install: 
         - chmod a+x ./mvnw
-      script: ./mvnw clean install
+      script: ./mvnw clean package
       before_deploy:
         - git config --local user.name "Travis CI"
         - git config --local user.email "travis@example.com"
