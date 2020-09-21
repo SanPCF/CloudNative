@@ -34,7 +34,7 @@ jobs:
         - wget -P build/libs https://github.com/$GITHUB_USERNAME/CloudNative/releases/tag/$RELEASE_TAG/HelloWorld-0.0.1-SNAPSHOT.jar
       before_deploy:
         - echo "Deploying $RELEASE_TAG to Cloud Foundry"
-        - echo "dir- $TRAVIS_BUILD_DIR"
+        - echo  $TRAVIS_BUILD_DIR
       deploy:
         provider: cloudfoundry
         api: $CF_API_URL
