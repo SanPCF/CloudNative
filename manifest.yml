@@ -1,0 +1,8 @@
+---
+applications:
+- name: Hello-World
+  path: target/HelloWorld-0.0.1-SNAPSHOT.jar
+  random-route: true
+  env:
+    WELCOME_MESSAGE: Welcome to Cloud Native World
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 1.8.+ } }'
