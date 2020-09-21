@@ -1,7 +1,7 @@
 ---
 applications:
 - name: Hello-World
-  path: target/HelloWorld-0.0.1-SNAPSHOT.jar
+  path: build/libs/HelloWorld-0.0.1-SNAPSHOT.jar
   routes:
   - route: hello-world-san-pcf.cfapps.io
   env:
