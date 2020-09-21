@@ -16,7 +16,7 @@ jobs:
       jdk: openjdk8
       install: skip
       before_install: 
-        - chmod a+x ./mvnw
+        - chmod +x mvnw
       script: ./mvnw clean install
       before_deploy:
         - git config --local user.name "Travis CI"
