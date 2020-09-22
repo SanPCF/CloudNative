@@ -34,7 +34,7 @@
 	</dependencies>
 
 	<build>
-	<finalName>${artifactId}</finalName>
+	<!-- <finalName>${artifactId}</finalName> -->
 	<!-- <resources>
         <resource>
             <directory>${project.basedir}</directory>
