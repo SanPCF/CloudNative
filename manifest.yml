@@ -1,7 +1,7 @@
 ---
 applications:
 - name: Hello-World
-  path: /tmp/app/build/libs/HelloWorld-0.0.1-SNAPSHOT.jar
+  path: /home/travis/build/SanPCF/CloudNative/target/HelloWorld-0.0.1-SNAPSHOT.jar
   buildpacks:
   - https://github.com/cloudfoundry/java-buildpack#v4.19.1
   routes:
