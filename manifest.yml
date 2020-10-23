@@ -1,13 +1,13 @@
 ---
 applications:
-- name: Hello-World
+- name: Hello-World-ENV
   path: /home/travis/.m2/repository/com/example/HelloWorld/0.0.1-SNAPSHOT/HelloWorld-0.0.1-SNAPSHOT.jar
   buildpacks:
   - https://github.com/cloudfoundry/java-buildpack#v4.19.1
   routes:
   - route: hello-world-san-pcf.cfapps.io
   services:
-  - tracker-database
+  - MySql-Service
   env:
     WELCOME_MESSAGE: Welcome to Cloud Native World From Travis
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 1.8.+ } }'
