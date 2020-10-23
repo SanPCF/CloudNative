@@ -6,6 +6,8 @@ applications:
   - https://github.com/cloudfoundry/java-buildpack#v4.19.1
   routes:
   - route: hello-world-san-pcf.cfapps.io
+  services:
+  - tracker-database
   env:
     WELCOME_MESSAGE: Welcome to Cloud Native World From Travis
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 1.8.+ } }'
